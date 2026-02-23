@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Expert en Cybersécurité, Réseaux, Développement Web et Mobile. Solutions professionnelles et sécurisées pour votre entreprise." />
+  <meta name="keywords" content="cybersécurité, réseaux, développement web, développement mobile, pentesting, sécurité informatique, Bénin" />
+  <meta name="author" content="Joseph Dehazounde" />
+  <meta property="og:title" content="CyberShield Pro - Cybersécurité et Solutions Numériques" />
+  <meta property="og:description" content="Expert en Cybersécurité, Réseaux, Développement Web et Mobile au Bénin." />
+  <meta property="og:type" content="website" />
+  <title>CyberShield Pro - Cybersécurité et Solutions Numériques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styless.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="CyberShield Pro">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+          <path d="M22 2L4 9V22C4 31.94 12.24 41.24 22 43C31.76 41.24 40 31.94 40 22V9L22 2Z" fill="url(#sg)" opacity="0.15"/>
+          <path d="M22 2L4 9V22C4 31.94 12.24 41.24 22 43C31.76 41.24 40 31.94 40 22V9L22 2Z" stroke="url(#sg)" stroke-width="1.5" fill="none"/>
+          <circle cx="22" cy="16" r="2" fill="#00C2D4"/>
+          <circle cx="14" cy="22" r="1.5" fill="#00C2D4" opacity="0.7"/>
+          <circle cx="30" cy="22" r="1.5" fill="#00C2D4" opacity="0.7"/>
+          <circle cx="22" cy="30" r="2" fill="#00C2D4"/>
+          <line x1="22" y1="18" x2="22" y2="28" stroke="#00C2D4" stroke-width="1" opacity="0.6"/>
+          <line x1="15.5" y1="22" x2="21" y2="22" stroke="#00C2D4" stroke-width="1" opacity="0.5"/>
+          <line x1="23" y1="22" x2="28.5" y2="22" stroke="#00C2D4" stroke-width="1" opacity="0.5"/>
+          <rect x="19" y="20" width="6" height="5" rx="1" fill="#00C2D4" opacity="0.9"/>
+          <path d="M20 20V18.5C20 17.12 21 16 22 16C23 16 24 17.12 24 18.5V20" stroke="#00C2D4" stroke-width="1.2" fill="none"/>
+          <defs>
+            <linearGradient id="sg" x1="4" y1="2" x2="40" y2="43" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00C2D4"/><stop offset="1" stop-color="#1A6EBD"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Cyber<span>Shield</span></span>
+      </a>
+      <nav id="nav" role="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#hero"     data-i18n="nav_home">Accueil</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#about"    data-i18n="nav_about">A propos</a></li>
+          <li><a href="#why"      data-i18n="nav_why">Pourquoi nous</a></li>
+          <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Langue">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="slider-track" aria-hidden="true">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d4?w=1920&q=90&auto=format&fit=crop'); background-position: center top;"></div>
+    </div>
+    <div class="slider-overlay" aria-hidden="true"></div>
+    <div class="hero-grid"      aria-hidden="true"></div>
+    <div class="particles"      aria-hidden="true" id="particles"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" data-i18n="hero_badge">&#x1F512; Experts en Sécurité Numérique</div>
+        <h1 data-i18n="hero_title">Solutions Professionnelles en<br/><span class="gradient-text">Cybersécurité, Réseaux</span><br/>et Développement</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Nous protégeons votre infrastructure, construisons vos applications et sécurisons votre avenir numérique avec une expertise de pointe.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Demander un devis</a>
+          <a href="#services" class="btn btn-ghost"  data-i18n="hero_cta2">Nos services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">50+</span><span data-i18n="stat1">Projets réalisés</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">99%</span><span data-i18n="stat2">Clients satisfaits</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">24/7</span><span data-i18n="stat3">Support actif</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="services_label">Nos Services</span>
+        <h2 data-i18n="services_title">Des solutions complètes pour votre <span class="gradient-text">sécurité numérique</span></h2>
+        <p data-i18n="services_sub">Nous couvrons l'ensemble de vos besoins technologiques avec expertise et rigueur.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 2L3 9V21C3 30.73 10.73 39.77 20 41.5C29.27 39.77 37 30.73 37 21V9Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+              <path d="M14 21L18 25L27 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="s1_title">Cybersécurité</h3>
+          <p data-i18n="s1_desc">Audit de sécurité, tests d'intrusion (pentesting) et sécurisation de vos réseaux contre les cybermenaces modernes.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s1_f1">Audit et Pentesting</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s1_f2">Sécurité réseau</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s1_f3">Réponse aux incidents</span></li>
+          </ul>
+          <a href="#contact" class="card-link" data-i18n="card_cta">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="12" r="5" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+              <circle cx="8"  cy="30" r="4" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+              <circle cx="32" cy="30" r="4" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.08"/>
+              <line x1="20" y1="17" x2="8"  y2="26" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>
+              <line x1="20" y1="17" x2="32" y2="26" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>
+              <line x1="12" y1="30" x2="28" y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 data-i18n="s2_title">Réseaux Informatiques</h3>
+          <p data-i18n="s2_desc">Installation, configuration et maintenance d'infrastructures réseau performantes, fiables et évolutives.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s2_f1">Installation LAN/WAN</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s2_f2">Configuration routeurs</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s2_f3">Maintenance préventive</span></li>
+          </ul>
+          <a href="#contact" class="card-link" data-i18n="card_cta">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="3" y="6" width="34" height="28" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.05"/>
+              <path d="M13 19L8 22L13 25"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M27 19L32 22L27 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 15L18 29" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3 data-i18n="s3_title">Développement Web</h3>
+          <p data-i18n="s3_desc">Création de sites vitrine, e-commerce et applications web sur-mesure, modernes et optimisés SEO.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s3_f1">Sites et Landing pages</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s3_f2">Applications web</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s3_f3">E-commerce</span></li>
+          </ul>
+          <a href="#contact" class="card-link" data-i18n="card_cta">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="12" y="2" width="16" height="36" rx="3" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.05"/>
+              <circle cx="20" cy="33" r="1.5" fill="currentColor"/>
+              <line x1="16" y1="7" x2="24" y2="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              <path d="M16 16L20 20L16 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="21" y1="20" x2="25" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="s4_title">Développement Mobile</h3>
+          <p data-i18n="s4_desc">Applications iOS et Android natives et cross-platform, performantes, intuitives et sécurisées.</p>
+          <ul class="card-features">
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s4_f1">Android et iOS</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s4_f2">Apps cross-platform</span></li>
+            <li><i class="fas fa-angle-right"></i> <span data-i18n="s4_f3">UI/UX mobile</span></li>
+          </ul>
+          <a href="#contact" class="card-link" data-i18n="card_cta">En savoir plus <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="about" class="section section-dark">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ag" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#FF6B35" stop-opacity="0.12"/>
+                <stop offset="100%" stop-color="#1A1C22" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="200" cy="200" r="180" fill="url(#ag)"/>
+            <g opacity="0.12" stroke="#FF6B35" stroke-width="0.8" fill="none">
+              <polygon points="200,60 246,87 246,142 200,168 154,142 154,87"/>
+              <polygon points="246,142 292,168 292,224 246,250 200,224 200,168"/>
+              <polygon points="154,142 200,168 200,224 154,250 108,224 108,168"/>
+              <polygon points="200,224 246,250 246,306 200,332 154,306 154,250"/>
+            </g>
+            <circle cx="200" cy="180" r="70" stroke="#FF6B35" stroke-width="1" fill="#FF6B35" fill-opacity="0.03"/>
+            <text x="200" y="165" text-anchor="middle" fill="#FF6B35" font-size="32" font-family="Syne,sans-serif" font-weight="800">10+</text>
+            <text x="200" y="190" text-anchor="middle" fill="#9AA3B5" font-size="11" font-family="DM Sans,sans-serif">ans d'experience</text>
+            <rect x="265" y="80"  width="105" height="36" rx="18" fill="#00C2D4" fill-opacity="0.08" stroke="#00C2D4" stroke-width="0.8"/>
+            <text x="317" y="103" text-anchor="middle" fill="#00C2D4" font-size="10" font-family="DM Sans,sans-serif">Cybersecurite</text>
+            <rect x="30"  y="130" width="90"  height="36" rx="18" fill="#2ECC71" fill-opacity="0.08" stroke="#2ECC71" stroke-width="0.8"/>
+            <text x="75"  y="153" text-anchor="middle" fill="#2ECC71" font-size="10" font-family="DM Sans,sans-serif">Reseaux</text>
+            <rect x="278" y="270" width="90"  height="36" rx="18" fill="#FF6B35" fill-opacity="0.08" stroke="#FF6B35" stroke-width="0.8"/>
+            <text x="323" y="293" text-anchor="middle" fill="#FF6B35" font-size="10" font-family="DM Sans,sans-serif">Dev Web</text>
+            <rect x="30"  y="270" width="90"  height="36" rx="18" fill="#7C5CBF" fill-opacity="0.08" stroke="#7C5CBF" stroke-width="0.8"/>
+            <text x="75"  y="293" text-anchor="middle" fill="#7C5CBF" font-size="10" font-family="DM Sans,sans-serif">Dev Mobile</text>
+          </svg>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-label" data-i18n="about_label">A Propos</span>
+        <h2 data-i18n="about_title">Une expertise technique <span class="gradient-text">solide et eprouvee</span></h2>
+        <p data-i18n="about_p1">CyberShield Pro est une entreprise technologique fondee a Porto-Novo, Benin, avec une mission claire : fournir des solutions numeriques de haute qualite adaptees aux realites africaines et mondiales.</p>
+        <p data-i18n="about_p2">Notre equipe maitrise les dernieres technologies en cybersecurite, infrastructure reseau, developpement web et mobile. Nous intervenons aupres d'entreprises de toutes tailles avec la meme rigueur et le meme niveau d'excellence.</p>
+        <div class="about-milestones">
+          <div class="milestone"><span>50+</span><small data-i18n="m1">Projets livres</small></div>
+          <div class="milestone"><span>30+</span><small data-i18n="m2">Clients actifs</small></div>
+          <div class="milestone"><span>10+</span><small data-i18n="m3">Annees d'experience</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI NOUS -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="why_label">Pourquoi Nous</span>
+        <h2 data-i18n="why_title">Ce qui nous <span class="gradient-text">distingue</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal" data-delay="0">
+          <div class="why-icon"><i class="fas fa-brain"></i></div>
+          <h4 data-i18n="w1_title">Expertise Technique</h4>
+          <p data-i18n="w1_desc">Certifications internationales et maitrise des technologies les plus recentes pour des solutions performantes.</p>
+        </div>
+        <div class="why-card reveal" data-delay="100">
+          <div class="why-icon"><i class="fas fa-lock"></i></div>
+          <h4 data-i18n="w2_title">Securite Avancee</h4>
+          <p data-i18n="w2_desc">Protection proactive contre les cybermenaces avec des methodologies eprouvees et des outils de pointe.</p>
+        </div>
+        <div class="why-card reveal" data-delay="200">
+          <div class="why-icon"><i class="fas fa-bolt"></i></div>
+          <h4 data-i18n="w3_title">Solutions Modernes</h4>
+          <p data-i18n="w3_desc">Technologies actuelles, code propre et architectures evolutives pour perenniser vos investissements.</p>
+        </div>
+        <div class="why-card reveal" data-delay="300">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h4 data-i18n="w4_title">Support 24/7</h4>
+          <p data-i18n="w4_desc">Accompagnement continu, reactivite maximale et suivi personnalise pour chaque client.</p>
+        </div>
+        <div class="why-card reveal" data-delay="400">
+          <div class="why-icon"><i class="fas fa-handshake"></i></div>
+          <h4 data-i18n="w5_title">Relation de Confiance</h4>
+          <p data-i18n="w5_desc">Transparence totale, engagements tenus et partenariat a long terme avec chaque client.</p>
+        </div>
+        <div class="why-card reveal" data-delay="500">
+          <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+          <h4 data-i18n="w6_title">Resultats Mesurables</h4>
+          <p data-i18n="w6_desc">Indicateurs clairs, reporting regulier et ROI demontrable sur chaque mission confiee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="contact_label">Contact</span>
+        <h2 data-i18n="contact_title">Travaillons <span class="gradient-text">ensemble</span></h2>
+        <p data-i18n="contact_sub">Decrivez votre projet et nous vous repondons sous 24h.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong data-i18n="c_email">Email</strong>
+              <a href="mailto:josephdehazounde@gmail.com">josephdehazounde@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong data-i18n="c_phone">Telephone</strong>
+              <a href="tel:0162108694">0162108694</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong data-i18n="c_address">Adresse</strong>
+              <span>Porto-Novo, Benin</span>
+            </div>
+          </div>
+          <div class="info-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom" data-i18n="f_nom">Nom *</label>
+              <input type="text" id="nom" name="nom" required autocomplete="family-name" />
+              <span class="error-msg" id="err-nom"></span>
+            </div>
+            <div class="form-group">
+              <label for="prenom" data-i18n="f_prenom">Prenom *</label>
+              <input type="text" id="prenom" name="prenom" required autocomplete="given-name" />
+              <span class="error-msg" id="err-prenom"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" data-i18n="f_email">Email *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+              <span class="error-msg" id="err-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="tel" data-i18n="f_tel">Telephone *</label>
+              <input type="tel" id="tel" name="tel" required autocomplete="tel" />
+              <span class="error-msg" id="err-tel"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sujet" data-i18n="f_sujet">Sujet *</label>
+            <select id="sujet" name="sujet" required>
+              <option value=""       data-i18n="f_sujet_default">-- Selectionner --</option>
+              <option value="cyber"  data-i18n="f_opt1">Cybersecurite</option>
+              <option value="reseau" data-i18n="f_opt2">Reseaux</option>
+              <option value="web"    data-i18n="f_opt3">Developpement Web</option>
+              <option value="mobile" data-i18n="f_opt4">Developpement Mobile</option>
+              <option value="autre"  data-i18n="f_opt5">Autre</option>
+            </select>
+            <span class="error-msg" id="err-sujet"></span>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="f_message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-msg" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="f_send">Envoyer le message</span>
+          </button>
+          <div id="form-success" class="form-success" aria-live="polite" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <span data-i18n="form_ok">Message envoye ! Nous vous repondrons sous 24h.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="CyberShield Pro">
+          <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+            <path d="M22 2L4 9V22C4 31.94 12.24 41.24 22 43C31.76 41.24 40 31.94 40 22V9L22 2Z" stroke="url(#fs)" stroke-width="1.5" fill="url(#fs)" fill-opacity="0.1"/>
+            <circle cx="22" cy="16" r="2" fill="#00C2D4"/>
+            <rect x="19" y="20" width="6" height="5" rx="1" fill="#00C2D4" opacity="0.9"/>
+            <path d="M20 20V18.5C20 17.12 21 16 22 16C23 16 24 17.12 24 18.5V20" stroke="#00C2D4" stroke-width="1.2" fill="none"/>
+            <defs>
+              <linearGradient id="fs" x1="4" y1="2" x2="40" y2="43">
+                <stop stop-color="#00C2D4"/><stop offset="1" stop-color="#1A6EBD"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">Cyber<span>Shield</span></span>
+        </a>
+        <p data-i18n="footer_desc">Solutions professionnelles en cybersecurite, reseaux et developpement numerique.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5 data-i18n="footer_nav">Navigation</h5>
+        <ul>
+          <li><a href="#hero"     data-i18n="nav_home">Accueil</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#about"    data-i18n="nav_about">A propos</a></li>
+          <li><a href="#why"      data-i18n="nav_why">Pourquoi nous</a></li>
+          <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5 data-i18n="footer_services">Services</h5>
+        <ul>
+          <li><a href="#services" data-i18n="s1_title">Cybersecurite</a></li>
+          <li><a href="#services" data-i18n="s2_title">Reseaux</a></li>
+          <li><a href="#services" data-i18n="s3_title">Developpement Web</a></li>
+          <li><a href="#services" data-i18n="s4_title">Developpement Mobile</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5 data-i18n="footer_contact">Contact</h5>
+        <p><i class="fas fa-envelope"></i> josephdehazounde@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0162108694</p>
+        <p><i class="fas fa-map-marker-alt"></i> Porto-Novo, Benin</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="year"></span> CyberShield Pro.
+        <span data-i18n="footer_rights">Tous droits reserves.</span>
+        | <a href="#" data-i18n="footer_legal">Mentions legales</a>
+      </p>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Retour en haut" title="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Firebase SDK -->
+<script type="module" src="scriptss.js"></script>
+</body>
+</html>
